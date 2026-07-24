@@ -1,0 +1,5 @@
+quantity,unit,literature_value,fluent_value,error_percent,assessment,comparison_scope
+pressure_drop,Pa,9386,9550.5973,1.753,reproduced,promoted hydraulic result
+maximum_temperature,K,318.21,321.49101,1.031,reproduced,promoted thermal result
+heat_input_vs_reported_transfer,W,703,737.79972,4.950,ledger_only,local imposed heat input versus literature heat-transfer report
+full_top_surface_T_sigma,K,3.90,4.933507821,26.500,not_reproduced,area-weighted complete top surface

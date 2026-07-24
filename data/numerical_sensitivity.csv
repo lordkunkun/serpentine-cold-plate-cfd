@@ -1,0 +1,9 @@
+check,quantity,unit,baseline_value,comparison_value,relative_change_percent,criterion_percent,status,interpretation
+mesh_A_to_B,pressure_drop,Pa,9550.5973,9471.6628,-0.8265,3.0,pass,matched hydraulic protocol
+mesh_A_to_B,maximum_temperature,K,321.49101,321.45461,-0.0113,1.0,pass,matched steady thermal protocol
+mesh_A_to_B,outlet_temperature,K,317.68550,317.68808,0.0008,1.0,pass,matched steady thermal protocol
+mesh_A_to_B,heat_input,W,737.79972,737.80000,0.00004,5.0,pass,source ledger
+mesh_A_to_B,interface_temperature_difference,K,0.15563,0.15606,0.276,5.0,pass,fluid-solid interface
+mesh_A_to_B,full_top_surface_T_sigma,K,4.933507821,4.933537449,0.0006,5.0,pass,numerically stable but not literature matched
+hydraulic_time_step,pressure_drop,Pa,9471.6628,9482.3454,0.1128,3.0,pass,5e-5 s versus 1e-4 s at 0.008 s
+steady_thermal_continuation,maximum_temperature,K,321.65068,321.45461,-0.0610,1.0,pass,20 versus 100 thermal iterations; not a time-step check

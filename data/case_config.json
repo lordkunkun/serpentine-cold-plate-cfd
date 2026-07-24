@@ -1,0 +1,45 @@
+{
+  "case_id": "q010_design4",
+  "reference": {
+    "title": "CFD Modeling and Thermal Analysis of a Cold Plate Design with a Zig-Zag Serpentine Flow Pattern for Li-Ion Batteries",
+    "doi": "10.3390/en16145243",
+    "design": "Design 4"
+  },
+  "geometry": {
+    "plate_length_mm": 340.0,
+    "plate_width_mm": 310.0,
+    "plate_thickness_mm": 5.0,
+    "channel_width_mm": 12.0,
+    "channel_depth_mm": 2.0,
+    "channel_count": 9,
+    "edge_margin_mm": 24.0,
+    "zigzag_amplitude_mm": 10.0,
+    "zigzag_pitch_mm": 36.0
+  },
+  "materials": {
+    "coolant": "water",
+    "coolant_density_kg_m3": 997.0,
+    "coolant_dynamic_viscosity_Pa_s": 0.000797,
+    "solid": "aluminum"
+  },
+  "boundaries": {
+    "inlet_mass_flow_kg_s": 0.01,
+    "inlet_temperature_K": 300.0,
+    "outlet_gauge_pressure_Pa": 0.0,
+    "bottom_heat_flux_W_m2": 7000.0,
+    "heated_area_m2": 0.1054,
+    "other_exterior_walls": "adiabatic",
+    "fluid_solid_interface": "coupled"
+  },
+  "models": {
+    "flow_regime": "laminar",
+    "thermal": "steady conjugate heat transfer",
+    "pressure_velocity_coupling": "SIMPLE",
+    "hydraulic_sensitivity_solver": "first-order transient"
+  },
+  "scope": {
+    "promoted_mass_flow_points": 1,
+    "flow_rate_sweep_completed": false,
+    "experimental_validation": false
+  }
+}

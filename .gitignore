@@ -1,0 +1,25 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.pyc
+*.pyo
+
+# Full solver databases and meshes are intentionally external.
+*.cas
+*.cas.h5
+*.dat
+*.dat.h5
+*.msh
+*.msh.gz
+*.stl
+*.vtk
+*.vtu
+
+# Local Fluent/HPC output.
+*.trn
+*.out
+*.err
+slurm-*
+raw/
+scratch/
